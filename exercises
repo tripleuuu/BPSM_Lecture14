@@ -1,0 +1,16 @@
+#!/usr/local/bin/python3
+#Q1
+def aa_rate1(seq,ob,sig):
+	length = len(seq)
+	count = seq.count('ob')
+	rate = count / length	
+	return round(rate,sig)
+#Q2
+def aa_rate2(seq,ob = "AILMFWYV"):
+	for base in ob:
+		length = len(seq)
+        	count = seq.count('base')
+        	rate_base = count / length
+		ratesum = sum(range(round(rate_base)))
+        	return ratesum
+
